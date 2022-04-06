@@ -1,9 +1,12 @@
 let userNum = document.getElementById("getNumber")
+
 userNum.addEventListener("keydown", function (e){
     if (e.keyCode == 13){
         run(e);
     }
 })
+
+userNum.focus();
 
 function run(){
     document.getElementById("paragraph").innerHTML = "Hello World!";
@@ -90,4 +93,10 @@ function compareNumbers() {
     
         z.style.textAlign = "center";
     }
+
+    resetInput();
+}
+
+function resetInput(){
+    document.getElementById("getNumber").value = "";
 }
