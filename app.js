@@ -8,6 +8,8 @@ userNum.addEventListener("keydown", function (e){
 
 userNum.focus();
 
+let counter = 0;
+
 function run(){
     document.getElementById("paragraph").innerHTML = "Hello World!";
 
@@ -71,6 +73,8 @@ function compareNumbers() {
 
     let z = document.getElementById("compare")
 
+    let c = document.getElementById("counter")
+
     if(a != b){
         z.innerHTML = "Numbers are not the same. The computer got " + b + " and user got " + a;
 
@@ -82,6 +86,18 @@ function compareNumbers() {
     
         z.style.textAlign = "center";
 
+        counter++
+
+        c.innerHTML = "You have tried " + counter + " times."
+
+        c.style.color = "white";
+
+        c.style.backgroundColor = "#312f2f";
+    
+        c.style.padding = "20px";
+    
+        c.style.textAlign = "center";
+
     } else if (a == b){
         z.innerHTML = "Numbers are the same. The computer got " + b + " and user got " + a;
 
@@ -92,6 +108,18 @@ function compareNumbers() {
         z.style.padding = "20px";
     
         z.style.textAlign = "center";
+
+        c.innerHTML = "You have tried " + counter + " times to get it right."
+
+        c.style.color = "white";
+
+        c.style.backgroundColor = "#312f2f";
+    
+        c.style.padding = "20px";
+    
+        c.style.textAlign = "center";
+
+        counter = 0
     }
 
     resetInput();
