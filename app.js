@@ -1,3 +1,10 @@
+let userNum = document.getElementById("getNumber")
+userNum.addEventListener("keydown", function (e){
+    if (e.keyCode == 13){
+        run(e);
+    }
+})
+
 function run(){
     document.getElementById("paragraph").innerHTML = "Hello World!";
 
