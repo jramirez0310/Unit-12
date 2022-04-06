@@ -8,6 +8,8 @@ function run(){
     document.getElementById("paragraph").style.padding = "20px";
 
     randomNum();
+
+    getUserNum();
 }
 
 function randomNum(){
@@ -26,4 +28,21 @@ function randomNum(){
 
     x.style.textAlign = "center";
 
+}
+
+function getUserNum(){
+
+    let user = document.getElementById("getNumber").value;
+
+    let y = document.getElementById("userNumber")
+
+    y.innerHTML = user;
+
+    y.style.color = "white"
+
+    y.style.backgroundColor = "#ff00e2"
+
+    y.style.padding = "20px"
+
+    y.style.textAlign = "center"
 }
