@@ -32,16 +32,6 @@ function randomNum(){
 
     let x = document.getElementById("random");
 
-    x.innerHTML = ran;
-
-    x.style.backgroundColor = "blue";
-
-    x.style.color = "#ffffff";
-
-    x.style.padding = "20px";
-
-    x.style.textAlign = "center";
-
     return ran;
 
 }
@@ -51,16 +41,6 @@ function getUserNum(){
     let user = document.getElementById("getNumber").value;
 
     let y = document.getElementById("userNumber")
-
-    y.innerHTML = user;
-
-    y.style.color = "white";
-
-    y.style.backgroundColor = "#ff00e2";
-
-    y.style.padding = "20px";
-
-    y.style.textAlign = "center";
 
     return user;
 }
