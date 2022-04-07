@@ -11,13 +11,6 @@ userNum.focus();
 let counter = 0;
 
 function run(){
-    document.getElementById("paragraph").innerHTML = "Hello World!";
-
-    document.getElementById("paragraph").style.backgroundColor = "green";
-
-    document.getElementById("paragraph").style.color = "#ffffff";
-
-    document.getElementById("paragraph").style.padding = "20px";
 
     randomNum();
 
@@ -78,6 +71,8 @@ function compareNumbers() {
     
         c.style.textAlign = "center";
 
+        document.querySelector("body").style.backgroundColor = "rgb(207, 109, 109)"
+
     } else if (a == b){
         z.innerHTML = "Numbers are the same. The computer got " + b + " and user got " + a;
 
@@ -100,6 +95,8 @@ function compareNumbers() {
         c.style.textAlign = "center";
 
         counter = 0
+
+        document.querySelector("body").style.backgroundColor = "rgb(107, 214, 127)"
     }
 
     resetInput();

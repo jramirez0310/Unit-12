@@ -8,19 +8,24 @@
     </head>
 
     <body>
-        <h1 class = "header">Guess the Number!</h1>
 
-        <h3 class = "instructions"></h3>
+        <div class = "intro">
+            <h1 class = "header">Guess the Number!</h1>
 
-        <p onclick="run();" id="paragraph">Click Here!</p>
+            <h3 class = "instructions">Here, you will guess the number the computer is thinking between 0 and 9. We will keep track of how many times you tried to guess. When you are ready to submit your answer, press enter or click the button that says "click here". Good luck!</h3>
+        </div>
 
-        <h1 id = "random"></h1>
+        <div class = "inputBox">
+            <input placeholder = "Enter a number here" id = "getNumber">
 
-        <input placeholder = "Enter a number here" id = "getNumber">
+            <p onclick="run();" id="paragraph">Click Here!</p>
+        </div>
 
-        <h1 id = "userNumber"></h1>
-
+        <div class = "compare">
+        <div>
         <h1 id = "compare"></h1>
+        </div>
+        </div>
 
         <h1 id = "counter"></h1>
 
